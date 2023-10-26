@@ -1,5 +1,5 @@
 import unittest
-from utils import check_word_list, simplify_words,load_companies
+from test_utils.utils import check_word_list, simplify_words,load_companies
 
 class LoadCompaniesTests(unittest.TestCase):
     
@@ -17,7 +17,7 @@ class CheckWordListTests(unittest.TestCase):
         words = ['hello world ', 'world', 'python', 'unit test']
         self.assertFalse(check_word_list(words))
 
-class SimplifyWOrdsListTEst(unittest.TestCase):
+class SimplifyWordsListTEst(unittest.TestCase):
     
     def test_no_change(self):
         words = ['hello', 'world', 'python', 'unittest']
